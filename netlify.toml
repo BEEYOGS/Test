@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/*"
+  from = "/hero/*"
   to = "/404/hero.html"
   status = 404
 
