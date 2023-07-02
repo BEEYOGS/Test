@@ -1,0 +1,336 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Capriola', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Capriola', cursive;
+  background-color: #fdcc04;
+}
+
+.navbar {
+  background-color: #fdcc04;
+  border-top: 3px solid;
+  border-bottom: 3px solid;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+}
+
+.logo {
+  color: #000;
+  font-size: 1.5rem;
+  font-style: italic;
+  padding: 0;
+  margin-left: 0;
+  font-family: 'Capriola', cursive;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 0.2rem;
+}
+
+.nav-items a {
+  display: inline-block;
+  font-weight: bold;
+  color: #000;
+  padding: 0 1rem;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+  gap: 20px;
+  font-family: 'Capriola', cursive;
+}
+
+.hero {
+  background: #fdcc04;
+  border: none;
+  display: flex;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+  padding: 2rem calc((100vw - 1300px) / 2);
+  border-bottom: 3px solid #000;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  color: #000;
+  padding: 0 2rem;
+}
+
+.column-left h1 {
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 3rem;
+  color: #000;
+  font-family: 'Caprasimo', cursive;
+}
+
+.column-left p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #000;
+  font-family: 'Capriola', cursive;
+}
+p2 {
+  font-family: 'Capriola', cursive;
+  margin-bottom: 1.5rem;
+}
+
+.column-left p:last-child {
+  margin-bottom: 1.2rem;
+}
+
+button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: 2px solid;
+  color: #fdcc04;
+  background: #000;
+  cursor: pointer;
+  border-radius: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease;
+  font-family: 'Press Start 2P', cursive;
+}
+
+button:hover {
+  background: #ffffff00;
+  color: #000;
+}
+
+.column-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 20%;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+  transform: rotate(10deg);
+  border: 1.5px solid #000;
+  margin-top: 60px;
+}
+
+.hero-image:hover {
+  filter: none;
+  transform: rotate(0deg) scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
+  .hero-container {
+    grid-template-columns: 1fr;
+    padding: 2rem calc((100vw - 100%) / 2);
+  }
+
+  .nav-items {
+    justify-content: center;
+  }
+
+  .nav-items a {
+    margin-right: 1rem;
+  }
+}
+
+
+/* Konsep yang sama dengan CSS sebelumnya */
+
+.about {
+  background-color: #fdcc04;
+  padding: 2rem;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+  font-family: 'Caprasimo', serif;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #000;
+  font-family: 'Capriola', serif;
+}
+
+.projects {
+  background-color: #fdcc04;
+  padding: 2rem;
+  
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #000;
+  font-family: 'Caprasimo', serif;
+}
+
+.projects ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projects li {
+  flex-basis: calc(33.33% - 1rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.projects li img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 7%;
+  filter: grayscale(100%);
+  transition: 0.3s ease;
+  border: 1.5px solid #000;
+}
+
+.projects li img:hover {
+  filter: none;
+  transform: rotate(0deg) scale(1.05);
+}
+
+#contact {
+  background-color: #fdcc04;
+  padding: 2rem;
+  margin-top: 60px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+  font-family: 'Caprasimo', serif;
+}
+
+.content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #000;
+  font-family: 'Capriola', serif;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.contact-form button {
+  padding: 1rem 3rem;
+  font-size: 1rem;
+  border: none;
+  color: #fdcc04;
+  background: #000;
+  cursor: pointer;
+  border-radius: 50px;
+  border: 2px solid;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: background-color 0.3s ease;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.contact-form button:hover {
+  background: rgba(173, 171, 171, 0);
+  color: #000;
+}
+
+.social-media {
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-media a {
+  color: #000;
+  font-size: 1.5rem;
+}
+
+footer {
+  color: #000;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 12px;
+}
