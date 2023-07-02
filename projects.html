@@ -17,7 +17,7 @@
       <div class="nav-items">
         <a href="/hero.html"><i class="fas fa-home"></i></a>
         <a href="/about.html"><i class="fas fa-info-circle"></i></a>
-        <a href="/projects.html"><i class="fas fa-folder-open"></i></a>
+        <a href="/projects.html" class="active"><i class="fas fa-folder-open"></i></a>
         <a href="/contact.html"><i class="fas fa-comments"></i></a>
       </div>
     </div>
@@ -57,5 +57,15 @@
     </div>
   </section>
   <script src="main.js"></script>
+  <script>
+    // Mendapatkan elemen menu pada navbar
+    const navItems = document.querySelectorAll('.nav-items a');
+
+    // Mengecek apakah URL saat ini mengandung '/hero.html'
+    if (window.location.pathname.includes('/hero.html')) {
+      // Menambahkan class "active" pada menu hero
+      navItems[0].classList.add('active');
+    }
+  </script>
 </body>
 </html>
