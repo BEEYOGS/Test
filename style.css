@@ -70,7 +70,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: auto;
-  padding: 2rem calc((100vw - 1300px) / 2);  
+  padding: 2rem calc((100vw - 1300px) / 2);
 }
 
 .column-left {
@@ -110,6 +110,7 @@ p2 {
 button {
   padding: 1rem 3rem;
   font-size: 1rem;
+  border: 2px solid;
   color: #fdcc04;
   background: #000;
   cursor: pointer;
@@ -123,7 +124,6 @@ button {
 button:hover {
   background: #ffffff00;
   color: #000;
-  border: 2px solid;
 }
 
 .column-right {
