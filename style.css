@@ -58,6 +58,14 @@ body {
   font-family: 'Capriola', cursive;
 }
 
+.nav-items a.active {
+  color: #fdcc04;
+  font-weight: bold;
+  background-color: #000;
+  border-radius: 100%;
+}
+
+
 .hero {
   background: #fdcc04;
   border: none;
