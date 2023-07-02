@@ -1,19 +1,19 @@
 [[redirects]]
   from = "/hero/*"
   to = "/404/hero.html"
-  status = 404
+  status = 200
 
 [[redirects]]
   from = "/about/*"
   to = "/404/about.html"
-  status = 404
+  status = 200
 
 [[redirects]]
   from = "/projects/*"
   to = "/404/projects.html"
-  status = 404
+  status = 200
 
 [[redirects]]
   from = "/contact/*"
   to = "/404/contact.html"
-  status = 404
+  status = 200
