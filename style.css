@@ -118,10 +118,11 @@ p2 {
 button {
   padding: 1rem 3rem;
   font-size: 1rem;
-  border: 2px solid;
+  text-decoration: none;
+  border: none;
   color: #fdcc04;
   background: #000;
-  cursor: pointer;
+  cursor: progress;
   border-radius: 50px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -132,6 +133,7 @@ button {
 button:hover {
   background: #ffffff00;
   color: #000;
+  border: 2px solid #333;
 }
 
 .column-right {
@@ -304,7 +306,7 @@ button:hover {
   border: none;
   color: #fdcc04;
   background: #000;
-  cursor: pointer;
+  cursor: progress;
   border-radius: 50px;
   border: 2px solid;
   margin-bottom: 1rem;
@@ -317,11 +319,13 @@ button:hover {
 .contact-form button:hover {
   background: rgba(173, 171, 171, 0);
   color: #000;
+  border: 2px solid #333;
 }
 
 .social-media {
   margin-bottom: 1rem;
   letter-spacing: 1px;
+  text-decoration: none;
   justify-content: center;
   align-items: center;
 }
@@ -329,6 +333,7 @@ button:hover {
 .social-media a {
   color: #000;
   font-size: 1.5rem;
+  cursor: progress;
 }
 
 footer {
