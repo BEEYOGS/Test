@@ -43,6 +43,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   margin-right: 0.2rem;
+  cursor: progress;
 }
 
 .nav-items a {
@@ -56,6 +57,7 @@ body {
   position: relative;
   gap: 20px;
   font-family: 'Capriola', cursive;
+  cursor: progress;
 }
 
 .nav-items a.active {
@@ -63,6 +65,7 @@ body {
   font-weight: bold;
   background-color: #000;
   border-radius: 100%;
+  cursor: progress;
 }
 
 
